@@ -537,5 +537,8 @@
   },"@openmrs/esm-laboratory-app": {
     "enableSendingLabTestsByEmail": true,
     "laboratorySpecimenTypeConcept": "32fd65f2-881a-4074-9185-9dda5c870f57"
-}
+},
+  "@ampath/esm-preappointment-app":{
+    "basicAuthBase64":""
+  }
 }
