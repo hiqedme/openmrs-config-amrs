@@ -56,7 +56,6 @@
     "logo": {
       "src": "https://poc-test-builds.fra1.digitaloceanspaces.com/@brand/logo_white.svg"
     }
-
   },
   "@openmrs/esm-home-app": {
     "extensionSlots": {
@@ -67,7 +66,7 @@
       }
     }
   },
-  "@openmrs/esm-patient-registration-app": {
+  "@ampath/esm-patient-registration-app": {
     "defaultPatientIdentifierTypes": [
       "58a4732e-1359-11df-a1f1-0026b9348838"
     ],
@@ -93,6 +92,11 @@
       ],
       "phone": {
         "personAttributeUuid": "72a759a8-1359-11df-a1f1-0026b9348838"
+      },
+      "address": {
+        "useAddressHierarchy": {
+          "searchAddressByLevel": true
+        }
       }
     },
     "sections": [
@@ -108,11 +112,11 @@
         "id": "contact",
         "name": "Contact Details",
         "fields": [
+          "address",
           "countryOfOrigin",
           "countyOfOrigin",
           "address1",
           "address2",
-          "address7",
           "cityVillage",
           "address3",
           "address8",
@@ -444,12 +448,18 @@
       {
         "id": "countryOfOrigin",
         "type": "address",
-        "label": "Country of origin"
+        "label": "Country of origin",
+        "validation": {
+          "required": "true"
+        }
       },
       {
         "id": "countyOfOrigin",
         "type": "address",
-        "label": "County of origin"
+        "label": "County of origin",
+        "validation": {
+          "required": "true"
+        }
       },
       {
         "id": "address1",
@@ -462,14 +472,12 @@
         "label": "Sub County"
       },
       {
-        "id": "address7",
-        "type": "address",
-        "label": "Ward"
-      },
-      {
         "id": "cityVillage",
         "type": "address",
-        "label": "Estate/Village"
+        "label": "Estate/Village",
+        "validation": {
+          "required": true
+        }
       },
       {
         "id": "address3",
@@ -518,11 +526,11 @@
       "muacUuid": "a89c6188-1350-11df-a1f1-0026b9348838"
     }
   },
-  "@openmrs/esm-patient-orders-app":{	
-    "orderEncounterType":	"e481dcd3-e9f4-49ee-9612-db8d2ea6abac"
+  "@openmrs/esm-patient-orders-app": {
+    "orderEncounterType": "e481dcd3-e9f4-49ee-9612-db8d2ea6abac"
   },
   "@openmrs/esm-patient-medications-app": {
-    "daysDurationUnit":"a899b9c4-1350-11df-a1f1-0026b9348838" 
+    "daysDurationUnit": "a899b9c4-1350-11df-a1f1-0026b9348838"
   },
   "@openmrs/esm-service-queues-app": {
     "concepts": {
@@ -534,11 +542,12 @@
       "defaultStatusConceptUuid": "89d01aa5-0ab0-4626-934b-37766b4cd779",
       "defaultTransitionStatus": "89d01aa5-0ab0-4626-934b-37766b4cd779"
     }
-  },"@openmrs/esm-laboratory-app": {
+  },
+  "@openmrs/esm-laboratory-app": {
     "enableSendingLabTestsByEmail": true,
     "laboratorySpecimenTypeConcept": "32fd65f2-881a-4074-9185-9dda5c870f57"
-},
-  "@ampath/esm-preappointment-app":{
-    "basicAuthBase64":""
+  },
+  "@ampath/esm-preappointment-app": {
+    "basicAuthBase64": ""
   }
 }
