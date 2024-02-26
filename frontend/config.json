@@ -32,14 +32,10 @@
     "showUpcomingAppointments": true,
     "extensionSlots": {
       "patient-highlights-bar-slot": {
-        "remove": [
-          "patient-flag-tags"
-        ]
+        "remove": ["patient-flag-tags"]
       },
       "patient-chart-summary-dashboard-slot": {
-        "add": [
-          "programs-overview-widget"
-        ],
+        "add": ["programs-overview-widget"],
         "remove": [
           "patient-clinical-view-overview",
           "immunization-overview-widget",
@@ -60,16 +56,12 @@
   "@openmrs/esm-home-app": {
     "extensionSlots": {
       "homepage-widgets-slot": {
-        "remove": [
-          "home-appointments"
-        ]
+        "remove": ["home-appointments"]
       }
     }
   },
   "@ampath/esm-patient-registration-app": {
-    "defaultPatientIdentifierTypes": [
-      "58a4732e-1359-11df-a1f1-0026b9348838"
-    ],
+    "defaultPatientIdentifierTypes": ["58a4732e-1359-11df-a1f1-0026b9348838"],
     "address": {
       "useAddressHierarchy": {
         "enabled": true,
