@@ -104,19 +104,17 @@
         "id": "contact",
         "name": "Contact Details",
         "fields": [
-          "address",
+          "phone",
+          "alternatePhone",
+          "email",
           "countryOfOrigin",
           "countyOfOrigin",
-          "address1",
-          "address2",
+          "address",
           "cityVillage",
           "address3",
           "address8",
           "latitude",
-          "longitude",
-          "phone",
-          "alternatePhone",
-          "email"
+          "longitude"
         ]
       },
       {
