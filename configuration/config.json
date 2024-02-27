@@ -1,8 +1,67 @@
 {
-  "@openmrs/esm-patient-registration-app": {
-    "defaultPatientIdentifierTypes": [
-      "58a4732e-1359-11df-a1f1-0026b9348838"
-    ],
+  "@openmrs/esm-login-app": {
+    "logo": {
+      "src": "https://poc-test-builds.fra1.digitaloceanspaces.com/@brand/logo_with_tagline.svg"
+    }
+  },
+  "@openmrs/esm-primary-navigation-app": {
+    "logo": {
+      "src": "https://poc-test-builds.fra1.digitaloceanspaces.com/@brand/logo_white.svg",
+      "name": "Ampath POC"
+    }
+  },
+  "@openmrs/esm-patient-programs-app": {
+    "customUrl": ""
+  },
+  "@openmrs/esm-styleguide": {
+    "Brand color #1": "#0055a5",
+    "Brand color #2": "#024D93",
+    "Brand color #3": "#0055a5"
+  },
+  "@openmrs/esm-form-entry-app": {
+    "dataSources": {
+      "monthlySchedule": true
+    }
+  },
+  "@openmrs/esm-patient-forms-app": {
+    "showRecommendedFormsTab": true,
+    "showHtmlFormEntryForms": false
+  },
+  "@openmrs/esm-patient-chart-app": {
+    "showServiceQueueFields": true,
+    "showUpcomingAppointments": true,
+    "extensionSlots": {
+      "patient-highlights-bar-slot": {
+        "remove": ["patient-flag-tags"]
+      },
+      "patient-chart-summary-dashboard-slot": {
+        "add": ["programs-overview-widget"],
+        "remove": [
+          "patient-clinical-view-overview",
+          "immunization-overview-widget",
+          "offline-tools-patient-chart-actions-widget"
+        ]
+      },
+      "patient-chart-dashboard-slot": {
+        "remove": [
+          "clinical-view-summary-dashboard",
+          "offline-tools-patient-chart-actions-dashboard-link"
+        ]
+      }
+    },
+    "logo": {
+      "src": "https://poc-test-builds.fra1.digitaloceanspaces.com/@brand/logo_white.svg"
+    }
+  },
+  "@openmrs/esm-home-app": {
+    "extensionSlots": {
+      "homepage-widgets-slot": {
+        "remove": ["home-appointments"]
+      }
+    }
+  },
+  "@ampath/esm-patient-registration-app": {
+    "defaultPatientIdentifierTypes": ["58a4732e-1359-11df-a1f1-0026b9348838"],
     "address": {
       "useAddressHierarchy": {
         "enabled": true,
@@ -25,6 +84,11 @@
       ],
       "phone": {
         "personAttributeUuid": "72a759a8-1359-11df-a1f1-0026b9348838"
+      },
+      "address": {
+        "useAddressHierarchy": {
+          "searchAddressByLevel": true
+        }
       }
     },
     "sections": [
@@ -95,6 +159,7 @@
         "type": "person attribute",
         "uuid": "06b0da36-e133-4be6-aec0-31e7ed0e1ac2",
         "label": "Relationship",
+
         "customConceptAnswers": [
           {
             "uuid": "7878e432-1359-11df-a1f1-0026b9348838",
@@ -353,12 +418,18 @@
       {
         "id": "countryOfOrigin",
         "type": "address",
-        "label": "Country of origin"
+        "label": "Country of origin",
+        "validation": {
+          "required": "true"
+        }
       },
       {
         "id": "countyOfOrigin",
         "type": "address",
-        "label": "County of origin"
+        "label": "County of origin",
+        "validation": {
+          "required": "true"
+        }
       },
       {
         "id": "address1",
@@ -371,16 +442,11 @@
         "label": "Sub County"
       },
       {
-        "id": "address7",
-        "type": "address",
-        "label": "Ward"
-      },
-      {
         "id": "cityVillage",
         "type": "address",
         "label": "Estate/Village",
         "validation": {
-          "required": "true"
+          "required": true
         }
       },
       {
@@ -405,9 +471,53 @@
       }
     ]
   },
-  "@openmrs/esm-styleguide": {
-    "Brand color #1": "#183D1A",
-    "Brand color #2": "#1D491F",
-    "Brand color #3": " #2C6D2F"
+  "@openmrs/esm-patient-vitals-app": {
+    "vitals": {
+      "encounterTypeUuid": "a44ad5e2-b3ec-42e7-8cfa-8ba3dbcf5ed7",
+      "formUuid": "3870ba93-d1b1-4864-a5fb-163853a2e1f3"
+    },
+    "concepts": {
+      "systolicBloodPressureUuid": "a8a65d5a-1350-11df-a1f1-0026b9348838",
+      "diastolicBloodPressureUuid": "a8a65e36-1350-11df-a1f1-0026b9348838",
+      "pulseUuid": "a8a65f12-1350-11df-a1f1-0026b9348838",
+      "temperatureUuid": "a8a65fee-1350-11df-a1f1-0026b9348838",
+      "oxygenSaturationUuid": "a8a66354-1350-11df-a1f1-0026b9348838",
+      "heightUuid": "a8a6619c-1350-11df-a1f1-0026b9348838",
+      "weightUuid": "a8a660ca-1350-11df-a1f1-0026b9348838",
+      "respiratoryRateUuid": "a8a6f71a-1350-11df-a1f1-0026b9348838",
+      "generalPatientNoteUuid": "a8a06fc6-1350-11df-a1f1-0026b9348838",
+      "midUpperArmCircumferenceUuid": "a89c6188-1350-11df-a1f1-0026b9348838"
+    }
+  },
+  "@openmrs/esm-patient-biometrics-app": {
+    "concepts": {
+      "heightUuid": "a8a6619c-1350-11df-a1f1-0026b9348838",
+      "weightUuid": "a8a660ca-1350-11df-a1f1-0026b9348838",
+      "muacUuid": "a89c6188-1350-11df-a1f1-0026b9348838"
+    }
+  },
+  "@openmrs/esm-patient-orders-app": {
+    "orderEncounterType": "e481dcd3-e9f4-49ee-9612-db8d2ea6abac"
+  },
+  "@openmrs/esm-patient-medications-app": {
+    "daysDurationUnit": "a899b9c4-1350-11df-a1f1-0026b9348838"
+  },
+  "@openmrs/esm-service-queues-app": {
+    "concepts": {
+      "priorityConceptSetUuid": "a96bb422-5480-46c7-ac42-20714b47199e",
+      "defaultPriorityConceptUuid": "bbd99c12-67e9-4381-8b4c-1f231e86f8e2",
+      "emergencyPriorityConceptUuid": "8e86ff12-ec83-41e8-a534-bb410739d880",
+      "serviceConceptSetUuid": "072541a1-2e09-4ad6-8682-ceb9a307ce0c",
+      "statusConceptSetUuid": "3ab190c1-4592-421e-bc5e-5e0524c9d785",
+      "defaultStatusConceptUuid": "89d01aa5-0ab0-4626-934b-37766b4cd779",
+      "defaultTransitionStatus": "89d01aa5-0ab0-4626-934b-37766b4cd779"
+    }
+  },
+  "@openmrs/esm-laboratory-app": {
+    "enableSendingLabTestsByEmail": true,
+    "laboratorySpecimenTypeConcept": "32fd65f2-881a-4074-9185-9dda5c870f57"
+  },
+  "@ampath/esm-preappointment-app": {
+    "basicAuthBase64": ""
   }
 }
