@@ -32,7 +32,7 @@
     "showUpcomingAppointments": true,
     "extensionSlots": {
       "patient-highlights-bar-slot": {
-        "remove": ["patient-flag-tags"]
+        "remove": ["patient-flag-tags", "biometrics-overview-widget"]
       },
       "patient-chart-summary-dashboard-slot": {
         "add": ["programs-overview-widget"],
@@ -43,14 +43,23 @@
         ]
       },
       "patient-chart-dashboard-slot": {
-        "remove": [
-          "clinical-view-summary-dashboard",
-          "offline-tools-patient-chart-actions-dashboard-link"
-        ]
+        "remove": ["clinical-view-summary-dashboard", "offline-tools-patient-chart-actions-dashboard-link"]
       }
     },
     "logo": {
       "src": "https://poc-test-builds.fra1.digitaloceanspaces.com/@brand/logo_white.svg"
+    },
+    "Translation overrides": {
+      "en": {
+        "recordVitals": "Record vitals",
+        "recordVitalsAndBiometrics": "Record Vitals",
+        "Vitals & Biometrics dashboard": "Vitals",
+        "Vitals & Biometrics": "Vitals",
+        "vitalsAndBiometrics": "Vitals",
+        "vitalsAndBiometricsNowAvailable": "They are now visible on the Vitals page",
+        "vitalsAndBiometricsRecorded": "Vitals saved",
+        "vitalsAndBiometricsSaveError": "Error saving vitals"
+      }
     }
   },
   "@openmrs/esm-home-app": {
@@ -91,14 +100,7 @@
         }
       }
     },
-    "sections": [
-      "demographics",
-      "contact",
-      "demographics-custom",
-      "relationships",
-      "nextOfKin",
-      "careGiver"
-    ],
+    "sections": ["demographics", "contact", "demographics-custom", "relationships", "nextOfKin", "careGiver"],
     "sectionDefinitions": [
       {
         "id": "contact",
@@ -120,31 +122,17 @@
       {
         "id": "demographics-custom",
         "name": "Demographics",
-        "fields": [
-          "maritalStatus",
-          "occupation",
-          "religion",
-          "highestLevelOfEducation"
-        ]
+        "fields": ["maritalStatus", "occupation", "religion", "highestLevelOfEducation"]
       },
       {
         "id": "nextOfKin",
         "name": "Next of Kin",
-        "fields": [
-          "nextOfKinName",
-          "nextOfKinRelationship",
-          "nextOfKinPhoneNumber",
-          "nextOfKinResidence"
-        ]
+        "fields": ["nextOfKinName", "nextOfKinRelationship", "nextOfKinPhoneNumber", "nextOfKinResidence"]
       },
       {
         "id": "careGiver",
         "name": "Care giver",
-        "fields": [
-          "careGiverName",
-          "careGiverRelationship",
-          "careGiverPhoneNumber"
-        ]
+        "fields": ["careGiverName", "careGiverRelationship", "careGiverPhoneNumber"]
       }
     ],
     "fieldDefinitions": [
@@ -489,6 +477,20 @@
       "respiratoryRateUuid": "a8a6f71a-1350-11df-a1f1-0026b9348838",
       "generalPatientNoteUuid": "a8a06fc6-1350-11df-a1f1-0026b9348838",
       "midUpperArmCircumferenceUuid": "a89c6188-1350-11df-a1f1-0026b9348838"
+    },
+    "extensionSlots": {
+      "patient-chart-summary-dashboard-slot": {
+        "remove": ["biometrics-overview-widget"]
+      },
+      "patient-chart-vitals-biometrics-dashboard-slot": {
+        "remove": ["biometrics-details-widget"]
+      }
+    },
+    "Translation overrides": {
+      "en": {
+        "Vitals & Biometrics": "Vitals",
+        "vitalsAndBiometrics": "Vitals"
+      }
     }
   },
   "@openmrs/esm-patient-biometrics-app": {
