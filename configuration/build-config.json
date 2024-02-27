@@ -31,7 +31,8 @@
     "@openmrs/esm-stock-management-app": "next",
     "@openmrs/esm-patient-notes-app": "next",
     "@openmrs/esm-patient-lists-app": "next",
-    "@ampath/esm-preappointment-app": "next"
+    "@ampath/esm-preappointment-app": "next",
+    "@openmrs/esm-patient-labs-app": "next"
   },
   "spaPath": "/amrs/spa",
   "apiUrl": "/amrs",
