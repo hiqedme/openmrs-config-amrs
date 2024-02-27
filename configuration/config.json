@@ -152,19 +152,14 @@
         "id": "careGiverName",
         "type": "person attribute",
         "uuid": "48876f06-7493-416e-855d-8413d894ea93",
-        "label": "Name",
-        "validation": {
-          "required": "true"
-        }
+        "label": "Name"
       },
       {
         "id": "careGiverRelationship",
         "type": "person attribute",
         "uuid": "06b0da36-e133-4be6-aec0-31e7ed0e1ac2",
         "label": "Relationship",
-        "validation": {
-          "required": "true"
-        },
+
         "customConceptAnswers": [
           {
             "uuid": "7878e432-1359-11df-a1f1-0026b9348838",
@@ -256,28 +251,19 @@
         "id": "careGiverPhoneNumber",
         "type": "person attribute",
         "uuid": "bb8684a5-ac0b-4c2c-b9a5-1203e99952c2",
-        "label": "Phone Number",
-        "validation": {
-          "required": "true"
-        }
+        "label": "Phone Number"
       },
       {
         "id": "nextOfKinName",
         "type": "person attribute",
         "uuid": "72a75bec-1359-11df-a1f1-0026b9348838",
-        "label": "Name",
-        "validation": {
-          "required": "true"
-        }
+        "label": "Name"
       },
       {
         "id": "nextOfKinRelationship",
         "type": "person attribute",
         "uuid": "5730994e-c267-426b-87b6-c152b606973d",
         "label": "Relationship",
-        "validation": {
-          "required": "true"
-        },
         "customConceptAnswers": [
           {
             "uuid": "7878e432-1359-11df-a1f1-0026b9348838",
@@ -369,19 +355,13 @@
         "id": "nextOfKinPhoneNumber",
         "type": "person attribute",
         "uuid": "a657a4f1-9c0f-444b-a1fd-445bb91dd12d",
-        "label": "Phone Number",
-        "validation": {
-          "required": "true"
-        }
+        "label": "Phone Number"
       },
       {
         "id": "nextOfKinResidence",
         "type": "person attribute",
         "uuid": "f38bd1be-c54c-4863-8497-3670292881eb",
-        "label": "Residence",
-        "validation": {
-          "required": "true"
-        }
+        "label": "Residence"
       },
       {
         "id": "maritalStatus",
