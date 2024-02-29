@@ -1,0 +1,1 @@
+{"version":3,"file":"579.js","mappings":"wPAIe,SAASA,IACtB,IAAM,GAAQC,EAAAA,EAAAA,kBAANC,EACR,OACE,kBAACC,EAAAA,iBAAgBA,CAACC,GAAG,sCAClBF,EAAE,qBAAsB,eAG/B,C","sources":["webpack://@ohri/openmrs-esm-ohri-form-render-app/./src/form-render-app-menu-link.component.tsx"],"names":["FormRenderAppMenuLink","useTranslation","t","ConfigurableLink","to"],"sourceRoot":""}

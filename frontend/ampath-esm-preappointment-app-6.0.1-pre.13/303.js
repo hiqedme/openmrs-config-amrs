@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunk_ampath_esm_preappointment_app=globalThis.webpackChunk_ampath_esm_preappointment_app||[]).push([[303,152],{2303:(a,e,t)=>{t.r(e),t.d(e,{default:()=>n,immutable:()=>l});var p=t(3255),i=t(3325);const l=a=>(e,t,p)=>(p.revalidateOnFocus=!1,p.revalidateIfStale=!1,p.revalidateOnReconnect=!1,a(e,t,p));var n=(0,i.withMiddleware)(p.ZP,l)}}]);
