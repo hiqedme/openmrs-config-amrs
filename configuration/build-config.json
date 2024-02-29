@@ -36,5 +36,6 @@
   "spaPath": "/amrs/spa",
   "apiUrl": "/amrs",
   "configUrls": ["${openmrsSpaBase}/config.json"],
-  "importmap": "/amrs/spa/importmap.json"
+  "importmap": "/amrs/spa/importmap.json",
+  "supportOffline": false
 }
