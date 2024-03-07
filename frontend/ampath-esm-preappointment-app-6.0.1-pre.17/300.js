@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunk_ampath_esm_preappointment_app=globalThis.webpackChunk_ampath_esm_preappointment_app||[]).push([[300],{4300:p=>{p.exports=JSON.parse('{"preAppointmentDescription":"Pre-appointments for the selected week","preAppointments":"Pre-Appointments"}')}}]);

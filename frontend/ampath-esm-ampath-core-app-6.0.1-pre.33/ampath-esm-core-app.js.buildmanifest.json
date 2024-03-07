@@ -1,0 +1,401 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 7103,
+      "sizes": {
+        "javascript": 7103
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [
+        "41.js"
+      ],
+      "auxiliaryFiles": [
+        "41.js.map"
+      ],
+      "hash": "061b9b8a8cdab78e",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 419592,
+      "sizes": {
+        "javascript": 419592
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-ampath-core-app"
+      ],
+      "files": [
+        "294.js"
+      ],
+      "auxiliaryFiles": [
+        "294.js.map"
+      ],
+      "hash": "6c51c9e4b92ae46a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 198,
+      "sizes": {
+        "javascript": 198
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [
+        "300.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "a57f4f632bc37923",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 25608,
+      "sizes": {
+        "javascript": 25608
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [
+        "372.js"
+      ],
+      "auxiliaryFiles": [
+        "372.js.map"
+      ],
+      "hash": "40292a2576d86197",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "ae1b1a0235728185",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 6329,
+      "sizes": {
+        "consume-shared": 210,
+        "javascript": 6119
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-ampath-core-app"
+      ],
+      "files": [
+        "429.js"
+      ],
+      "auxiliaryFiles": [
+        "429.js.map"
+      ],
+      "hash": "2cbd065a45532f27",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "0cc3853f3d21b6fe",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 24274,
+      "sizes": {
+        "javascript": 24274
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [
+        "495.js"
+      ],
+      "auxiliaryFiles": [
+        "495.js.map"
+      ],
+      "hash": "61f176cc5a2f74c2",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 21744,
+      "sizes": {
+        "javascript": 42,
+        "share-init": 252,
+        "runtime": 21450
+      },
+      "names": [
+        "@ampath/esm-ampath-core-app"
+      ],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-ampath-core-app"
+      ],
+      "files": [
+        "ampath-esm-core-app.js"
+      ],
+      "auxiliaryFiles": [
+        "ampath-esm-core-app.js.map"
+      ],
+      "hash": "5a93715b2775012c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 448098,
+      "sizes": {
+        "consume-shared": 294,
+        "javascript": 425711,
+        "share-init": 252,
+        "runtime": 21841
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [
+        "main.js.map"
+      ],
+      "hash": "3035864c0a1a4b5c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 1215476,
+      "sizes": {
+        "javascript": 1215476
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [
+        "831.js"
+      ],
+      "auxiliaryFiles": [
+        "831.js.map"
+      ],
+      "hash": "bd617cbc5009998c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 11051,
+      "sizes": {
+        "javascript": 11051
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [
+        "833.js"
+      ],
+      "auxiliaryFiles": [
+        "833.js.map"
+      ],
+      "hash": "334d33962bdc5e24",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 4116,
+      "sizes": {
+        "javascript": 4116
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [
+        "836.js"
+      ],
+      "auxiliaryFiles": [
+        "836.js.map"
+      ],
+      "hash": "4f8c60f6a6d82d12",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 25557,
+      "sizes": {
+        "javascript": 25557
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [
+        "876.js"
+      ],
+      "auxiliaryFiles": [
+        "876.js.map"
+      ],
+      "hash": "749e477a0b56fc41",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 418461,
+      "sizes": {
+        "javascript": 418461
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [
+        "913.js"
+      ],
+      "auxiliaryFiles": [
+        "913.js.map"
+      ],
+      "hash": "459f2167e16cc6f4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 40067,
+      "sizes": {
+        "javascript": 40067
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-ampath-core-app",
+        "main"
+      ],
+      "files": [
+        "917.js"
+      ],
+      "auxiliaryFiles": [
+        "917.js.map"
+      ],
+      "hash": "812288db148f45fd",
+      "childrenByOrder": {}
+    }
+  ]
+}

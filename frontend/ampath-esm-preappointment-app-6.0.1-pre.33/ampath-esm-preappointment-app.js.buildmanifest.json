@@ -1,0 +1,401 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 7103,
+      "sizes": {
+        "javascript": 7103
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [
+        "41.js"
+      ],
+      "auxiliaryFiles": [
+        "41.js.map"
+      ],
+      "hash": "de4bf66ba30c72cc",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 44569,
+      "sizes": {
+        "consume-shared": 210,
+        "javascript": 44359
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-preappointment-app"
+      ],
+      "files": [
+        "65.js"
+      ],
+      "auxiliaryFiles": [
+        "65.js.map"
+      ],
+      "hash": "b3d290be0d2fffbc",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 2707749,
+      "sizes": {
+        "javascript": 2707749
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-preappointment-app"
+      ],
+      "files": [
+        "87.js"
+      ],
+      "auxiliaryFiles": [
+        "87.js.map"
+      ],
+      "hash": "8553903ad4070ed0",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 137533,
+      "sizes": {
+        "javascript": 137533
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [
+        "144.js"
+      ],
+      "auxiliaryFiles": [
+        "144.js.map"
+      ],
+      "hash": "8a31eb421b132dc4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 151,
+      "sizes": {
+        "javascript": 151
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [
+        "300.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "a7c05e9f719f4e3f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 25608,
+      "sizes": {
+        "javascript": 25608
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [
+        "372.js"
+      ],
+      "auxiliaryFiles": [
+        "372.js.map"
+      ],
+      "hash": "f0e06a02f742acf4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "8271b52f3e59a773",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 21783,
+      "sizes": {
+        "javascript": 42,
+        "share-init": 252,
+        "runtime": 21489
+      },
+      "names": [
+        "@ampath/esm-preappointment-app"
+      ],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-preappointment-app"
+      ],
+      "files": [
+        "ampath-esm-preappointment-app.js"
+      ],
+      "auxiliaryFiles": [
+        "ampath-esm-preappointment-app.js.map"
+      ],
+      "hash": "e91c5cf2be59e94f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "7e5a33cd4e0d44a4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 39719,
+      "sizes": {
+        "javascript": 39719
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [
+        "447.js"
+      ],
+      "auxiliaryFiles": [
+        "447.js.map"
+      ],
+      "hash": "d39e524f3d0eb1c0",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 24274,
+      "sizes": {
+        "javascript": 24274
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [
+        "495.js"
+      ],
+      "auxiliaryFiles": [
+        "495.js.map"
+      ],
+      "hash": "9edc91e39b2fd84c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 2912075,
+      "sizes": {
+        "consume-shared": 294,
+        "javascript": 2889641,
+        "share-init": 252,
+        "runtime": 21888
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [
+        "main.js.map"
+      ],
+      "hash": "6f666143345c8e16",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 40067,
+      "sizes": {
+        "javascript": 40067
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [
+        "828.js"
+      ],
+      "auxiliaryFiles": [
+        "828.js.map"
+      ],
+      "hash": "fe5c32c450434d43",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 1215476,
+      "sizes": {
+        "javascript": 1215476
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [
+        "831.js"
+      ],
+      "auxiliaryFiles": [
+        "831.js.map"
+      ],
+      "hash": "d2c04bfb809a57e6",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 25557,
+      "sizes": {
+        "javascript": 25557
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [
+        "876.js"
+      ],
+      "auxiliaryFiles": [
+        "876.js.map"
+      ],
+      "hash": "afbfa3cbbd1b7f4f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 280928,
+      "sizes": {
+        "javascript": 280928
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-preappointment-app",
+        "main"
+      ],
+      "files": [
+        "913.js"
+      ],
+      "auxiliaryFiles": [
+        "913.js.map"
+      ],
+      "hash": "ca108c447683e4db",
+      "childrenByOrder": {}
+    }
+  ]
+}

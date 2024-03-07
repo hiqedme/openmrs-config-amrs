@@ -1,1 +1,0 @@
-{"$schema":"https://json.openmrs.org/routes.schema.json","backendDependencies":{"webservices.rest":"^2.24.0"},"pages":[{"component":"FormRenderTest","route":"form-render-test"}],"extensions":[{"name":"form-render-link","slot":"app-menu-slot","component":"FormRenderLink"}],"version":"2.2.1-pre.131"}

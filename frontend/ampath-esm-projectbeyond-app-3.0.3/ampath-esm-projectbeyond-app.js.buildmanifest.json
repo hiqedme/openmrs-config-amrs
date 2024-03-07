@@ -1,0 +1,438 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 11852,
+      "sizes": {
+        "javascript": 11852
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "118.js"
+      ],
+      "auxiliaryFiles": [
+        "118.js.map"
+      ],
+      "hash": "ae5e727368f56a3a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 3647,
+      "sizes": {
+        "consume-shared": 42,
+        "javascript": 3605
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app"
+      ],
+      "files": [
+        "153.js"
+      ],
+      "auxiliaryFiles": [
+        "153.js.map"
+      ],
+      "hash": "c3efce2f204cce01",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 23098,
+      "sizes": {
+        "consume-shared": 42,
+        "javascript": 3605,
+        "share-init": 126,
+        "runtime": 19325
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [
+        "main.js.map"
+      ],
+      "hash": "22a3d2fa6b073982",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 11850,
+      "sizes": {
+        "javascript": 11850
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "268.js"
+      ],
+      "auxiliaryFiles": [
+        "268.js.map"
+      ],
+      "hash": "7dc86c3b6f5e747e",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 7103,
+      "sizes": {
+        "javascript": 7103
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "294.js"
+      ],
+      "auxiliaryFiles": [
+        "294.js.map"
+      ],
+      "hash": "575428da42e0adf9",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1914,
+      "sizes": {
+        "javascript": 1914
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "319.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "b07ddf520a7c4f4d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 28725,
+      "sizes": {
+        "javascript": 28683,
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "546.js"
+      ],
+      "auxiliaryFiles": [
+        "546.js.map"
+      ],
+      "hash": "5a97a7401acacf08",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 19126,
+      "sizes": {
+        "javascript": 42,
+        "share-init": 126,
+        "runtime": 18958
+      },
+      "names": [
+        "@ampath/esm-projectbeyond-app"
+      ],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app"
+      ],
+      "files": [
+        "ampath-esm-projectbeyond-app.js"
+      ],
+      "auxiliaryFiles": [
+        "ampath-esm-projectbeyond-app.js.map"
+      ],
+      "hash": "bde5dbe6a91ccb7d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1643,
+      "sizes": {
+        "javascript": 1643
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "574.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "f6c2531f319b642f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 11853,
+      "sizes": {
+        "javascript": 11853
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "665.js"
+      ],
+      "auxiliaryFiles": [
+        "665.js.map"
+      ],
+      "hash": "e716b0898636efdd",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "e5f163108cdc9b83",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 568961,
+      "sizes": {
+        "javascript": 568961
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "718.js"
+      ],
+      "auxiliaryFiles": [
+        "718.js.map"
+      ],
+      "hash": "ee59b2c0cd83bb4d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1965,
+      "sizes": {
+        "javascript": 1965
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "757.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "cf3666dfa26175a5",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1244,
+      "sizes": {
+        "javascript": 1244
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "788.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "830dbdd6602b4427",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 1206590,
+      "sizes": {
+        "javascript": 1206590
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "800.js"
+      ],
+      "auxiliaryFiles": [
+        "800.js.map"
+      ],
+      "hash": "3772c5093bfca1a1",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1603,
+      "sizes": {
+        "javascript": 1603
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "807.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "413db0cbcf5235f4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1385,
+      "sizes": {
+        "javascript": 1385
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "833.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "bd6bd8d993cec15a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 39290,
+      "sizes": {
+        "javascript": 39290
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-projectbeyond-app",
+        "main"
+      ],
+      "files": [
+        "925.js"
+      ],
+      "auxiliaryFiles": [
+        "925.js.map"
+      ],
+      "hash": "d37c33a98f7717b6",
+      "childrenByOrder": {}
+    }
+  ]
+}

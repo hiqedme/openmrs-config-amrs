@@ -1,0 +1,542 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 37191,
+      "sizes": {
+        "javascript": 37191
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "32.js"
+      ],
+      "auxiliaryFiles": [
+        "32.js.map"
+      ],
+      "hash": "64de408f628636d5",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "e2b672ac9160e086",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 45094,
+      "sizes": {
+        "javascript": 45094
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "101.js"
+      ],
+      "auxiliaryFiles": [
+        "101.js.map"
+      ],
+      "hash": "088d60497b467ec1",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 1215476,
+      "sizes": {
+        "javascript": 1215476
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "130.js"
+      ],
+      "auxiliaryFiles": [
+        "130.js.map"
+      ],
+      "hash": "60e7252c46334644",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 7530864,
+      "sizes": {
+        "consume-shared": 294,
+        "javascript": 7509092,
+        "share-init": 294,
+        "runtime": 21184
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [
+        "main.js.map"
+      ],
+      "hash": "4fd4e780d70e6124",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "3c3f2dd4d860f351",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "d65026a88ab4b6bf",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 9917,
+      "sizes": {
+        "javascript": 9917
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "570.js"
+      ],
+      "auxiliaryFiles": [
+        "570.js.map"
+      ],
+      "hash": "ca7a874d0b74349b",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 5941,
+      "sizes": {
+        "javascript": 5941
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "574.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "6446f1049efd556d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 3377628,
+      "sizes": {
+        "javascript": 3377628
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "606.js"
+      ],
+      "auxiliaryFiles": [
+        "606.js.map"
+      ],
+      "hash": "cf4adef02a5c7f1d",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 41801,
+      "sizes": {
+        "javascript": 41801
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "637.js"
+      ],
+      "auxiliaryFiles": [
+        "637.js.map"
+      ],
+      "hash": "23e6a277e539ba03",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 643451,
+      "sizes": {
+        "javascript": 643409,
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app"
+      ],
+      "files": [
+        "639.js"
+      ],
+      "auxiliaryFiles": [
+        "639.js.map"
+      ],
+      "hash": "590cd2dec8d31836",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 3450864,
+      "sizes": {
+        "javascript": 3450864
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app"
+      ],
+      "files": [
+        "645.js"
+      ],
+      "auxiliaryFiles": [
+        "645.js.map"
+      ],
+      "hash": "839fd266eccb55ab",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 504,
+      "sizes": {
+        "javascript": 504
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "652.js"
+      ],
+      "auxiliaryFiles": [
+        "652.js.map"
+      ],
+      "hash": "5fd7c0b18cb35d08",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: default)",
+      "size": 168,
+      "sizes": {
+        "consume-shared": 168
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "bdf608b8d60a220e",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 13964,
+      "sizes": {
+        "javascript": 13964
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "731.js"
+      ],
+      "auxiliaryFiles": [
+        "731.js.map"
+      ],
+      "hash": "a14c2382a2dd53e9",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 45467,
+      "sizes": {
+        "javascript": 45467
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "747.js"
+      ],
+      "auxiliaryFiles": [
+        "747.js.map"
+      ],
+      "hash": "de7fda7fa38eef42",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 11050,
+      "sizes": {
+        "javascript": 11050
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "783.js"
+      ],
+      "auxiliaryFiles": [
+        "783.js.map"
+      ],
+      "hash": "3fda46f3d0e262cd",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 21071,
+      "sizes": {
+        "javascript": 42,
+        "share-init": 294,
+        "runtime": 20735
+      },
+      "names": [
+        "@ohri/openmrs-esm-ohri-hiv-app"
+      ],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app"
+      ],
+      "files": [
+        "openmrs-esm-ohri-hiv-app.js"
+      ],
+      "auxiliaryFiles": [
+        "openmrs-esm-ohri-hiv-app.js.map"
+      ],
+      "hash": "0c27429fcfe77f1f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 131300,
+      "sizes": {
+        "javascript": 131300
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "874.js"
+      ],
+      "auxiliaryFiles": [
+        "874.js.map"
+      ],
+      "hash": "3feea87c70264585",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 3616,
+      "sizes": {
+        "javascript": 3616
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "911.js"
+      ],
+      "auxiliaryFiles": [
+        "911.js.map"
+      ],
+      "hash": "5e52f792b838c5af",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 504,
+      "sizes": {
+        "javascript": 504
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-hiv-app",
+        "main"
+      ],
+      "files": [
+        "983.js"
+      ],
+      "auxiliaryFiles": [
+        "983.js.map"
+      ],
+      "hash": "30d2c5cdb01b3b50",
+      "childrenByOrder": {}
+    }
+  ]
+}

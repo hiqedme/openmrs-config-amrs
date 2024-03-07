@@ -520,7 +520,7 @@
     "laboratorySpecimenTypeConcept": "32fd65f2-881a-4074-9185-9dda5c870f57"
   },
   "@ampath/esm-preappointment-app": {
-    "basicAuthBase64": ""
+    "basicAuthBase64": "YWRtaW46QWRtaW4xMjM="
   },
   "@openmrs/esm-patient-labs-app": {
     "concepts": [

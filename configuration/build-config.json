@@ -4,7 +4,6 @@
     "@openmrs/esm-implementer-tools-app": "next",
     "@openmrs/esm-primary-navigation-app": "next",
     "@openmrs/esm-home-app": "next",
-    "@openmrs/esm-form-entry-app": "next",
     "@openmrs/esm-patient-allergies-app": "next",
     "@openmrs/esm-patient-appointments-app": "next",
     "@openmrs/esm-patient-banner-app": "next",
@@ -37,7 +36,11 @@
     "@ohri/openmrs-esm-ohri-pmtct": "next",
     "@ohri/openmrs-esm-ohri-tb-app": "next",
     "@ohri/openmrs-esm-ohri-cervical-cancer-app": "next",
-    "@ohri/openmrs-esm-ohri-form-render-app": "next"
+    "@ohri/openmrs-esm-ohri-form-render-app": "next",
+    "@ampath/esm-lab-order-manifest-app": "next",
+    "@ampath/esm-projectbeyond-app": "next",
+    "@ampath/esm-ampath-core-app": "next",
+    "@ampath/esm-otz-app": "next"
   },
   "spaPath": "/amrs/spa",
   "apiUrl": "/amrs",

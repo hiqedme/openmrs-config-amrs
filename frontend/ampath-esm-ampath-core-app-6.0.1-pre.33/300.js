@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunk_ampath_esm_ampath_core_app=globalThis.webpackChunk_ampath_esm_ampath_core_app||[]).push([[300],{4300:a=>{a.exports=JSON.parse('{"clinicalViews":"Clinical views","customViews":"In this section, you\'ll find custom clinical views tailored to patients\' conditions and enrolled care programs.","programmes":"Programmes"}')}}]);

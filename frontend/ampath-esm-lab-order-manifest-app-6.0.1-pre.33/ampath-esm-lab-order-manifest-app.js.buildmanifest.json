@@ -1,0 +1,427 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 7103,
+      "sizes": {
+        "javascript": 7103
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "41.js"
+      ],
+      "auxiliaryFiles": [
+        "41.js.map"
+      ],
+      "hash": "8be965faabad791b",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 906,
+      "sizes": {
+        "javascript": 906
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "143.js"
+      ],
+      "auxiliaryFiles": [
+        "143.js.map"
+      ],
+      "hash": "4c76a27d0016128c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 137533,
+      "sizes": {
+        "javascript": 137533
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "144.js"
+      ],
+      "auxiliaryFiles": [
+        "144.js.map"
+      ],
+      "hash": "a0bb752d1f3610e3",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "aadbe85fe36373f7",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 342,
+      "sizes": {
+        "javascript": 342
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "300.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "ce16ef8b7a59ae1c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 25608,
+      "sizes": {
+        "javascript": 25608
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "372.js"
+      ],
+      "auxiliaryFiles": [
+        "372.js.map"
+      ],
+      "hash": "6cd5e3b0ae209338",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "1c4f6d40b5d0bc7c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 39719,
+      "sizes": {
+        "javascript": 39719
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "447.js"
+      ],
+      "auxiliaryFiles": [
+        "447.js.map"
+      ],
+      "hash": "9f06849f3911e48a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1764,
+      "sizes": {
+        "consume-shared": 84,
+        "javascript": 1680
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app"
+      ],
+      "files": [
+        "469.js"
+      ],
+      "auxiliaryFiles": [
+        "469.js.map"
+      ],
+      "hash": "fbaf73fec05887f8",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 31039,
+      "sizes": {
+        "javascript": 31039
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "486.js"
+      ],
+      "auxiliaryFiles": [
+        "486.js.map"
+      ],
+      "hash": "4d87369ed3e9c0c9",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 1996684,
+      "sizes": {
+        "javascript": 1996684
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "522.js"
+      ],
+      "auxiliaryFiles": [
+        "522.js.map"
+      ],
+      "hash": "606bc2abb8a5d505",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 21263,
+      "sizes": {
+        "javascript": 42,
+        "share-init": 210,
+        "runtime": 21011
+      },
+      "names": [
+        "@ampath/esm-lab-order-manifest-app"
+      ],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app"
+      ],
+      "files": [
+        "ampath-esm-lab-order-manifest-app.js"
+      ],
+      "auxiliaryFiles": [
+        "ampath-esm-lab-order-manifest-app.js.map"
+      ],
+      "hash": "55da11d3a9955120",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 23404,
+      "sizes": {
+        "consume-shared": 126,
+        "javascript": 1680,
+        "share-init": 210,
+        "runtime": 21388
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [
+        "main.js.map"
+      ],
+      "hash": "ea282d231d124be9",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 40067,
+      "sizes": {
+        "javascript": 40067
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "828.js"
+      ],
+      "auxiliaryFiles": [
+        "828.js.map"
+      ],
+      "hash": "a2efb88ab2cf9428",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 1215476,
+      "sizes": {
+        "javascript": 1215476
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "831.js"
+      ],
+      "auxiliaryFiles": [
+        "831.js.map"
+      ],
+      "hash": "f8328ed84adc760c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 280928,
+      "sizes": {
+        "javascript": 280928
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "913.js"
+      ],
+      "auxiliaryFiles": [
+        "913.js.map"
+      ],
+      "hash": "258c2eecde61a845",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 61919,
+      "sizes": {
+        "javascript": 61877,
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-lab-order-manifest-app",
+        "main"
+      ],
+      "files": [
+        "958.js"
+      ],
+      "auxiliaryFiles": [
+        "958.js.map"
+      ],
+      "hash": "aea28f84cf87e898",
+      "childrenByOrder": {}
+    }
+  ]
+}

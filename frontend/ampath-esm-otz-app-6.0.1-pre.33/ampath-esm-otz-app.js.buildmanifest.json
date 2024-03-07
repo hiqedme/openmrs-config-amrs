@@ -1,0 +1,257 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 7103,
+      "sizes": {
+        "javascript": 7103
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-otz-app",
+        "main"
+      ],
+      "files": [
+        "41.js"
+      ],
+      "auxiliaryFiles": [
+        "41.js.map"
+      ],
+      "hash": "e54bc52e93065215",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 16077,
+      "sizes": {
+        "consume-shared": 126,
+        "javascript": 15951
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-otz-app"
+      ],
+      "files": [
+        "132.js"
+      ],
+      "auxiliaryFiles": [
+        "132.js.map"
+      ],
+      "hash": "1d329adcaf883365",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 310,
+      "sizes": {
+        "javascript": 310
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-otz-app",
+        "main"
+      ],
+      "files": [
+        "300.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "ec651adb98042f62",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-otz-app",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "04eb3fbfb1e35faf",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 20708,
+      "sizes": {
+        "javascript": 42,
+        "share-init": 168,
+        "runtime": 20498
+      },
+      "names": [
+        "@ampath/esm-otz-app"
+      ],
+      "idHints": [],
+      "runtime": [
+        "@ampath/esm-otz-app"
+      ],
+      "files": [
+        "ampath-esm-otz-app.js"
+      ],
+      "auxiliaryFiles": [
+        "ampath-esm-otz-app.js.map"
+      ],
+      "hash": "ba8c5e08ca6d5d6f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 478126,
+      "sizes": {
+        "consume-shared": 168,
+        "javascript": 456909,
+        "share-init": 168,
+        "runtime": 20881
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [
+        "main.js.map"
+      ],
+      "hash": "6d0c53a73c592d1c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 1215476,
+      "sizes": {
+        "javascript": 1215476
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-otz-app",
+        "main"
+      ],
+      "files": [
+        "831.js"
+      ],
+      "auxiliaryFiles": [
+        "831.js.map"
+      ],
+      "hash": "16e7aa66b2a86e0f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 440958,
+      "sizes": {
+        "javascript": 440958
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-otz-app"
+      ],
+      "files": [
+        "878.js"
+      ],
+      "auxiliaryFiles": [
+        "878.js.map"
+      ],
+      "hash": "98b7002cb2cbd442",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 418461,
+      "sizes": {
+        "javascript": 418461
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-otz-app",
+        "main"
+      ],
+      "files": [
+        "913.js"
+      ],
+      "auxiliaryFiles": [
+        "913.js.map"
+      ],
+      "hash": "31cbadb76fd557bc",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 40067,
+      "sizes": {
+        "javascript": 40067
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ampath/esm-otz-app",
+        "main"
+      ],
+      "files": [
+        "917.js"
+      ],
+      "auxiliaryFiles": [
+        "917.js.map"
+      ],
+      "hash": "e43745d0f3eeee81",
+      "childrenByOrder": {}
+    }
+  ]
+}
