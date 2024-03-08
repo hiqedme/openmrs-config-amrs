@@ -108,10 +108,11 @@
 							"label": "What time does the patient prefer to receive the SMS?",
 							"type": "obs",
 							"required": "true",
+							"datePickerFormat": "timer",
 							"id": "smsTime",
 							"questionOptions": {
-								"rendering": "time",
-								"concept": "4e1a9d59-3d06-47eb-82a7-30410db249e4"
+								"rendering": "date",
+								"concept": "3a002340-2450-4f0b-ab7f-52c2aedf4ed5"
 							},
 							"validators": [],
 							"hide": {

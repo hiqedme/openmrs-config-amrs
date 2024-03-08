@@ -7922,6 +7922,7 @@
 					"questions": [
 						{
 							"label": "Comorbid illness:",
+							"required":"true",
 							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('0ac4af8a-1b8e-4404-b445-c0471d6f7576')) ? undefined : HD.getObject('prevEnc').getValue('0ac4af8a-1b8e-4404-b445-c0471d6f7576')",
 							"id": "comorbidIllness",
 							"questionOptions": {
@@ -8061,7 +8062,7 @@
 										"label": "Junior ASA"
 									}
 								],
-								"rendering": "select"
+								"rendering": "multiCheckbox"
 							},
 							"type": "obs",
 							"validators": [],
@@ -8113,7 +8114,7 @@
 										"label": "Pioglitazone"
 									}
 								],
-								"rendering": "select"
+								"rendering": "multiCheckbox"
 							},
 							"type": "obs",
 							"validators": [],
@@ -8141,7 +8142,7 @@
 										"label": "Olanzapine"
 									}
 								],
-								"rendering": "select"
+								"rendering": "multiCheckbox"
 							},
 							"type": "obs",
 							"validators": [],

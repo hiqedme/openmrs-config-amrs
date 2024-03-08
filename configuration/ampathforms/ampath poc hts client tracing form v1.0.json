@@ -1,0 +1,161 @@
+{
+    "name": "AMPATH POC HTS Client Tracing Form v1.0",
+    "description": "HTS Client Tracing Form",
+    "version": "1.0",
+    
+    
+    "retired": false,
+    "encounter": "HTS",
+    "pages": [
+      {
+        "label": "HTS Client tracing",
+        "sections": [
+          {
+            "label": "Visit Details",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Date:",
+                "type": "encounterDatetime",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "validators": [
+                  {
+                    "type": "date",
+                    "allowFutureDates": "false"
+                  }
+                ],
+                "id": "encDate"
+              },
+              {
+                "label": "Provider:",
+                "type": "encounterProvider",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encProvider "
+              },
+              {
+                "label": "Location:",
+                "type": "encounterLocation",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encLocation"
+              }
+            ]
+          },
+          {
+            "label": "HTS Client Tracing",
+            "isExpanded": "true",
+            "id": "contactType",
+            "questions": [
+              {
+                "label": "Contact type:",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "a89dea80-1350-11df-a1f1-0026b9348838",
+                  "answers": [
+                    {
+                      "concept": "0ce2c4af-f6e1-41cb-b544-cfba74360713",
+                      "label": "Physical tracing"
+                    },
+                    {
+                      "concept": "1555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Phone tracing"
+                    }
+                  ]
+                },
+                "required": "true",
+                "id": "__9xuKvqEHx"
+              },
+              {
+                "label": "Status :",
+                "type": "obs",
+                "alert": {
+                  "alertWhenExpression": "contactStatus === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'",
+                  "message": "Please remember to fill the referral and linkage form after saving this form"
+                },
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "10630AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "answers": [
+                    {
+                      "concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Not contacted"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Contacted but not linked"
+                    },
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Contacted and linked"
+                    }
+                  ]
+                },
+                "id": "contactStatus",
+                "required": "true"
+              },
+              {
+                "label": "Reason not contacted :",
+                "type": "obs",
+                "id": "reasonsPhone",
+                "questionOptions": {
+                  "concept": "1552AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "select",
+                  "answers": [
+                    {
+                      "concept": "a89decc4-1350-11df-a1f1-0026b9348838",
+                      "label": "Incorrect locator information"
+                    },
+                    {
+                      "concept": "a89de45e-1350-11df-a1f1-0026b9348838",
+                      "label": "No locator information"
+                    },
+                    {
+                      "concept": "1567AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Calls not going through"
+                    },
+                    {
+                      "concept": "1563AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Not found at home"
+                    },
+                    {
+                      "concept": "1562AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Migrated"
+                    },
+                    {
+                      "concept": "1593AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Died"
+                    },
+                    {
+                      "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Others"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "contactStatus !== '1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Remarks:",
+                "type": "obs",
+                "id": "remarks",
+                "questionOptions": {
+                  "concept": "9467AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "textarea"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "referencedForms": []
+  }

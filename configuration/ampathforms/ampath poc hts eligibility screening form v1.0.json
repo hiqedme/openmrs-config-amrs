@@ -1,0 +1,1865 @@
+{
+    "name": "AMPATH POC HTS Eligibility Screening Form v1.0",
+    "description": "Form used to screen clients prior to HIV testing",
+    "version": "1",
+    "published": true,
+    "uuid": "04295648-7606-11e8-adc0-fa7ae01bbebc",
+    "retired": false,
+    "encounter": "HTS",
+    "pages": [
+      {
+        "label": "HTS Eligibility Screening",
+        "sections": [
+          {
+            "label": "Visit Details",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Date:",
+                "type": "encounterDatetime",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "validators": [
+                  {
+                    "type": "date",
+                    "allowFutureDates": "false"
+                  }
+                ],
+                "id": "encDate"
+              },
+              {
+                "label": "Provider:",
+                "type": "encounterProvider",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encProvider "
+              },
+              {
+                "label": "Location:",
+                "type": "encounterLocation",
+                "questionOptions": {
+                  "rendering": "ui-select-extended"
+                },
+                "id": "encLocation"
+              }
+            ]
+          },
+          {
+            "label": "Population",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Population Type :",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "bbc2e048-0db6-4c22-a951-dab66b1243f9",
+                  "answers": [
+                    {
+                      "concept": "79ab66e0-4248-491e-be7c-cddaa89bb0d7",
+                      "label": "General Population"
+                    },
+                    {
+                      "concept": "93aa3f1d-1c39-4196-b5e6-8adc916cd5d6",
+                      "label": "Key Population"
+                    },
+                    {
+                      "concept": "8b0fa615-39c7-40ba-ad06-579ae540c6a5",
+                      "label": "Priority Population"
+                    }
+                  ]
+                },
+                "id": "populationType",
+                "required": "true"
+              },
+              {
+                "label": "Key Population Type :",
+                "type": "obs",
+                "id": "kpTypeFemale",
+                "questionOptions": {
+                  "concept": "93aa3f1d-1c39-4196-b5e6-8adc916cd5d6",
+                  "rendering": "select",
+                  "answers": [
+                    {
+                      "concept": "a890d57a-1350-11df-a1f1-0026b9348838",
+                      "label": "People who inject drugs"
+                    },
+                    {
+                      "concept": "a89ff438-1350-11df-a1f1-0026b9348838",
+                      "label": "Female sex Worker"
+                    },
+                    {
+                      "concept": "b7d9878b-8ce9-4cdf-b6c3-a1545989c604",
+                      "label": "People in prison or enclosed spaces"
+                    },
+                    {
+                      "concept": "a4d337b6-4029-467f-9b16-629e24d05e15",
+                      "label": "Transgender"
+                    },
+                    {
+                      "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Other"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "populationType !== '93aa3f1d-1c39-4196-b5e6-8adc916cd5d6' || age <15 || sex != 'F'"
+                }
+              },
+              {
+                "label": "Specify:",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "a8a06fc6-1350-11df-a1f1-0026b9348838"
+                },
+                "id": "kPfmalEOther",
+                "hide": {
+                  "hideWhenExpression": "isEmpty(kpTypeFemale) || kpTypeFemale !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Key Population Type :",
+                "type": "obs",
+                "id": "kpTypeFemale",
+                "questionOptions": {
+                  "concept": "93aa3f1d-1c39-4196-b5e6-8adc916cd5d6",
+                  "rendering": "select",
+                  "answers": [
+                    {
+                      "concept": "a890d57a-1350-11df-a1f1-0026b9348838",
+                      "label": "People who inject drugs"
+                    },
+                    {
+                      "concept": "160578AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Men who have sex with men"
+                    },
+                    {
+                      "concept": "b7d9878b-8ce9-4cdf-b6c3-a1545989c604",
+                      "label": "People in prison or enclosed spaces"
+                    },
+                    {
+                      "concept": "a4d337b6-4029-467f-9b16-629e24d05e15",
+                      "label": "Transgender"
+                    },
+                    {
+                      "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Other"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "populationType !== '93aa3f1d-1c39-4196-b5e6-8adc916cd5d6' || age <15 || sex != 'F'"
+                }
+              },
+              
+              {
+                "label": "Specify:",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "a8a06fc6-1350-11df-a1f1-0026b9348838"
+                },
+                "id": "kPmalEOther",
+                "hide": {
+                  "hideWhenExpression": "isEmpty(kpTypeMale) || kpTypeMale !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Priority Population Type :",
+                "type": "obs",
+                "id": "ppType",
+                "questionOptions": {
+                  "concept": "8b0fa615-39c7-40ba-ad06-579ae540c6a5",
+                  "rendering": "select",
+                  "answers": [
+                    {
+                      "concept": "a5e87a67-2f2f-43b5-9acd-0132d796d901",
+                      "label": "Fisher folk"
+                    },
+                    {
+                      "concept": "5ebb18d6-8fab-43bc-898f-6428dcc24c1e",
+                      "label": "Truck driver"
+                    },
+                    {
+                      "concept": "38e553c5-3744-4bd6-9a30-d582741ddb5d",
+                      "label": "Adolescent and young girls"
+                    },
+                    {
+                      "concept": "b7d9878b-8ce9-4cdf-b6c3-a1545989c604",
+                      "label": "People in prison or enclosed spaces"
+                    },
+                    {
+                      "concept": "72303ffa-d5b0-4a21-80a9-637ad6ec9538",
+                      "label": "Military and other uniformed services"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "populationType !== '8b0fa615-39c7-40ba-ad06-579ae540c6a5' || age <15"
+                }
+              },
+              {
+                "label": "Does client have any disability?",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "a89ffa64-1350-11df-a1f1-0026b9348838",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "id": "DisabilityClienT"
+              },
+              {
+                "label": "Please indicated the type of disability :",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "checkbox",
+                  "concept": "a89ffa64-1350-11df-a1f1-0026b9348838",
+                  "answers": [
+                    {
+                      "concept": "ef7df6d2-e2da-478a-abbe-c6273f211702",
+                      "label": "Hearing impairment"
+                    },
+                    {
+                      "concept": "bad3e303-2b74-40ad-8f90-14ca804c4ad7",
+                      "label": "Visual impairment"
+                    },
+                    {
+                      "concept": "291e1dc4-203a-4a09-aa0c-2d0a1962a719",
+                      "label": "Mentally Challenged"
+                    },
+                    {
+                      "concept": "d2c75e8e-3c80-4851-8225-050adfa96226",
+                      "label": "Physically Challenged"
+                    },
+                    {
+                      "concept": "a8aaf3e2-1350-11df-a1f1-0026b9348838",
+                      "label": "Others"
+                    }
+                  ]
+                },
+                "id": "disaBilityTypes",
+                "hide": {
+                  "hideWhenExpression": "isEmpty(DisabilityClienT) || DisabilityClienT != '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Specify",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "a8a06fc6-1350-11df-a1f1-0026b9348838"
+                },
+                "id": "specifyOtherDisability",
+                "hide": {
+                  "hideWhenExpression": "isEmpty(disaBilityTypes) || disaBilityTypes != 'a8aaf3e2-1350-11df-a1f1-0026b9348838'"
+                }
+              }
+            ]
+          },
+          {
+            "label": "Department/Coverage",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Department",
+                "type": "obs",
+                "id": "patDepart",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "a8a17e48-1350-11df-a1f1-0026b9348838",
+                  "answers": [
+                    {
+                      "concept": "a8a09ac8-1350-11df-a1f1-0026b9348838",
+                      "label": "OPD:Out-patient department"
+                    },
+                    {
+                      "concept": "a8a8b0b4-1350-11df-a1f1-0026b9348838",
+                      "label": "IPD:In-patient department"
+                    },
+                    {
+                      "concept": "9f696a25-3a42-41af-bbad-e73241d7ad98",
+                      "label": "Emergency"
+                    },
+                    {
+                      "concept": "a89fbedc-1350-11df-a1f1-0026b9348838",
+                      "label": "PMTCT"
+                    },
+                    {
+                      "concept": "a8a17b3c-1350-11df-a1f1-0026b9348838",
+                      "label": "VCT"
+                    },
+                    {
+                      "concept": "9bc09285-7a04-4c81-a313-3a1c67f5c84a",
+                      "label": "Community outreach"
+                    }
+                  ]
+                },
+                "required": "true"
+              },
+              {
+                "label": "Patient Type",
+                "type": "obs",
+                "id": "patienTyPe",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "a89eea66-1350-11df-a1f1-0026b9348838",
+                  "answers": [
+                    {
+                      "concept": "a8a359a2-1350-11df-a1f1-0026b9348838",
+                      "label": "HP:Hospital Patient"
+                    },
+                    {
+                      "concept": "a46ff7ed-d319-423a-8b57-977f41498e0a",
+                      "label": "NP:Non-Hospital Patient"
+                    }
+                  ]
+                },
+                "required": "true"
+              },
+              {
+                "label": "Client a health care worker?",
+                "type": "obs",
+                "id": "hcwCare",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "a8aaf158-1350-11df-a1f1-0026b9348838",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "required": "true",
+                "hide": {
+                  "hideWhenExpression": "age < 17"
+                }
+              },
+              {
+                "label": "Client has any relationship with an index client?",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "checkbox",
+                  "concept": "bfdf728c-9c56-4ba9-ad40-1ae3c7fcdfa9",
+                  "answers": [
+                    {
+                      "concept": "12373AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Social Contact",
+                      "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    },
+                    {
+                      "concept": "1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "None"
+                    }
+                  ]
+                },
+                "id": "cricChild",
+                "required": "true",
+                "hide": {
+                  "hideWhenExpression": "!(age <=9)"
+                }
+              },
+              {
+                "label": "Client has any relationship with an index client?",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "checkbox",
+                  "concept": "bfdf728c-9c56-4ba9-ad40-1ae3c7fcdfa9",
+                  "answers": [
+                    {
+                      "concept": "10479AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Sexual Contact",
+                      "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    },
+                    {
+                      "concept": "12373AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Social Contact",
+                      "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    },
+                    {
+                      "concept": "12375AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Needle Sharing",
+                      "disableWhenExpression": "myValue === '1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    },
+                    {
+                      "concept": "1107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "None"
+                    }
+                  ]
+                },
+                "id": "cricAdulT",
+                "required": "true",
+                "hide": {
+                  "hideWhenExpression": "!(age >9)"
+                }
+              }
+            ]
+          },
+          {
+            "label": "HTS Strategy",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Indicate HTS strategy used:",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "219f85c-31dd-4212-92ac-77926fa5ba03",
+                  "answers": [
+                    {
+                      "concept": "2177AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "HP:Provider Initiated Testing(PITC)"
+                    },
+                    {
+                      "concept": "a46ff7ed-d319-423a-8b57-977f41498e0a",
+                      "label": "NP: HTS for non-patients"
+                    },
+                    {
+                      "concept": "58782117-ad52-4699-84f1-8a33a7bf77d6",
+                      "label": "VI:Integrated VCT Center"
+                    },
+                    {
+                      "concept": "a8a17bfa-1350-11df-a1f1-0026b9348838",
+                      "label": "MO: Mobile Outreach HTS"
+                    },
+                    {
+                      "concept": "a8a4636a-1350-11df-a1f1-0026b9348838",
+                      "label": "Index testing"
+                    },
+                    {
+                      "concept": "95ae82d3-31a2-48a8-909a-c2c1b283ed85",
+                      "label": "SNS: Social Networks"
+                    },
+                    {
+                      "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "O: Others"
+                    }
+                  ]
+                },
+                "id": "facilityHTStrategy",
+                "required": "true"
+              },
+              {
+                "label": "Specify:",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "11871AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                },
+                "id": "otherFacilityhtsStrategy",
+                "hide": {
+                  "hideWhenExpression": "isEmpty(facilityHTStrategy) || facilityHTStrategy !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              }
+            ]
+          },
+          {
+            "label": "HTS Entry Point",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Indicate HTS entry point: ",
+                "type": "obs",
+                "required": "true",
+                "questionOptions": {
+                  "rendering": "select",
+                  "concept": "aad34924-d6e7-4138-a841-0fea9ee4b41f",
+                  "answers": [
+                    {
+                      "concept": "5485AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "In Patient Department(IPD)"
+                    },
+                    {
+                      "concept": "a8a09ac8-1350-11df-a1f1-0026b9348838",
+                      "label": "Out Patient Department(OPD)"
+                    },
+                    {
+                      "concept": "2219AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Peadiatric Clinic"
+                    },
+                    {
+                      "concept": "10138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Nutrition Clinic"
+                    },
+                    {
+                      "concept": "1776AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "PMTCT - ANC"
+                    },
+                    {
+                      "concept": "9494AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "PMTCT - MAT"
+                    },
+                    {
+                      "concept": "1975AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "PMTCT - PNC"
+                    },
+                    {
+                      "concept": "10649AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "TB"
+                    },
+                    {
+                      "concept": "2047AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "VCT"
+                    },
+                    {
+                      "concept": "8707AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "VMMC"
+                    },
+                    {
+                      "concept": "1964AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "STI Clinic"
+                    },
+                    {
+                      "concept": "7974AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Emergency"
+                    },
+                    {
+                      "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Other"
+                    }
+                  ]
+                },
+                "id": "htsFacilityEntryPoint"
+              },
+              {
+                "label": "Specify:",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "text",
+                  "concept": "11871AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                },
+                "id": "otherEntryPoint",
+                "hide": {
+                  "hideWhenExpression": "isEmpty(htsFacilityEntryPoint) || htsFacilityEntryPoint !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              }
+            ]
+          },
+          {
+            "label": "History of HIV Testing",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Mother's HIV Status :",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "6149AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "answers": [
+                    {
+                      "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Positive"
+                    },
+                    {
+                      "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Negative"
+                    },
+                    {
+                      "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Unknown"
+                    }
+                  ]
+                },
+                "id": "motHersHivstatus",
+                "required": "true",
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "age > 10"
+                }
+              },
+              {
+                "label": "Tested for HIV before :",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "12019AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "id": "testHistory",
+                "required": "true"
+              },
+              {
+                "label": "Who performed the test?:",
+                "type": "obs",
+                "id": "teSteR",
+                "questionOptions": {
+                  "concept": "10927b6d-0f49-4a20-9bca-fe755719613c",
+                  "rendering": "checkbox",
+                  "answers": [
+                    {
+                      "concept": "5619AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "HTS Provider"
+                    },
+                    {
+                      "concept": "00e8899b-8dde-4736-83e7-4faedb47a52c",
+                      "label": "Self Tested"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(testHistory) || testHistory !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Provider Test Result :",
+                "type": "obs",
+                "id": "testedResultsprovider",
+                "questionOptions": {
+                  "concept": "1357AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "select",
+                  "answers": [
+                    {
+                      "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Unknown"
+                    },
+                    {
+                      "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Positive"
+                    },
+                    {
+                      "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Negative"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(teSteR) || !arrayContains(teSteR, ['5619AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'])"
+                }
+              },
+              {
+                "label": "Date Tested:",
+                "type": "obs",
+                "id": "dateProvider",
+                "questionOptions": {
+                  "concept": "10790AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "date"
+                },
+                "validators": [
+                  {
+                    "type": "date",
+                    "allowFutureDates": "false"
+                  },
+                  {
+                    "type": "js_expression",
+                    "failsWhenExpression": "(new moment(encDate)).isBefore((new moment(myValue)), 'day')",
+                    "message": "The date tested cannot be in the future."
+                  }
+                ],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(teSteR) || !arrayContains(teSteR, ['5619AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA']) || testedResultsprovider === '1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Self Test Result :",
+                "type": "obs",
+                "id": "testedResultsself",
+                "questionOptions": {
+                  "concept": "1357AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "select",
+                  "answers": [
+                    {
+                      "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Unknown"
+                    },
+                    {
+                      "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Positive"
+                    },
+                    {
+                      "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Negative"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(teSteR) || !arrayContains(teSteR, ['2797e57b-d1ff-4928-b10e-b72e95b63faf'])"
+                }
+              },
+              {
+                "label": "Date Tested:",
+                "type": "obs",
+                "id": "dateSelf",
+                "questionOptions": {
+                  "concept": "10790AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "date"
+                },
+                "validators": [
+                  {
+                    "type": "date",
+                    "allowFutureDates": "false"
+                  },
+                  {
+                    "type": "js_expression",
+                    "failsWhenExpression": "(new moment(encDate)).isBefore((new moment(myValue)), 'day')",
+                    "message": "The date tested cannot be in the future."
+                  }
+                ],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(teSteR)|| !arrayContains(teSteR, ['2797e57b-d1ff-4928-b10e-b72e95b63faf'])"
+                }
+              },
+              {
+                "label": "Client started on ART :",
+                "type": "obs",
+                "id": "startedArt",
+                "questionOptions": {
+                  "concept": "ce696acd-6fc2-4ce5-b734-ff808dd19766",
+                  "rendering": "select",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(testHistory) || testedResultsprovider !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "CCC Number :",
+                "type": "obs",
+                "id": "upnConcept",
+                "questionOptions": {
+                  "concept": "9775AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "number",
+                  "min": "0"
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(startedArt) || startedArt !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              }
+            ]
+          },
+          {
+            "label": "Risk Assessment",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Has the child been defiled?",
+                "type": "obs",
+                "id": "childDefiled",
+                "questionOptions": {
+                  "concept": "8319AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "age > 15 || testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Has the client ever had sex?",
+                "type": "obs",
+                "id": "sexuallyActive",
+                "required": "true",
+                "questionOptions": {
+                  "concept": "5569AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "age < 9 || testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Is the client sexually active?",
+                "type": "obs",
+                "id": "activeSexually",
+                "questionOptions": {
+                  "concept": "8319AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive == '0' || sexuallyActive == '10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || age < 9"
+                }
+              },
+              {
+                "label": "Has the client had a new sexual partner in the last 3 months?",
+                "type": "obs",
+                "id": "newPartner",
+                "questionOptions": {
+                  "concept": "9301AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive == '0' || sexuallyActive == '10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || age < 9 "
+                }
+              },
+              {
+                "label": "Partner HIV status",
+                "type": "obs",
+                "id": "partnerHivStatus",
+                "questionOptions": {
+                  "concept": "2313AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1067AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Unknown"
+                    },
+                    {
+                      "concept": "703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "HIV Positive"
+                    },
+                    {
+                      "concept": "664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "HIV Negative"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive == '0' || sexuallyActive == '10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || age < 10 "
+                }
+              },
+              {
+                "label": "Discordant Couple",
+                "type": "obs",
+                "id": "coupleDiscordant",
+                "questionOptions": {
+                  "concept": "6096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive !== '1' || age < 10"
+                }
+              },
+              {
+                "label": "Have you engaged yourself in unprotected sex with more than one sexual partner in the last 12 months?",
+                "type": "obs",
+                "id": "multipleSexPartners",
+                "questionOptions": {
+                  "concept": "5568AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive !== '1' || age < 9"
+                }
+              },
+              {
+                "label": "How many sexual partners?",
+                "type": "obs",
+                "id": "noSexPartners",
+                "questionOptions": {
+                  "concept": "5570AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "number",
+                  "max": "",
+                  "min": "0"
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(multipleSexPartners) || multipleSexPartners !== '1' || age < 9"
+                }
+              },
+              {
+                "label": "Does the client engage in sex under the influence of alcohol/drugs?",
+                "type": "obs",
+                "id": "alcoholicSex",
+                "questionOptions": {
+                  "concept": "9506b97f-c8bc-48a8-a439-72bb65276785",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "a89fffd2-1350-11df-a1f1-0026b9348838",
+                      "label": "Always"
+                    },
+                    {
+                      "concept": "1422AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Sometimes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Not at all"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive !== '1' || age < 9"
+                }
+              },
+              {
+                "label": "Have you ever had unprotected sex in exchange of money or other material gains?",
+                "type": "obs",
+                "id": "moneySex",
+                "questionOptions": {
+                  "concept": "9763AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive !== '1' || age < 9"
+                }
+              },
+              {
+                "label": "Have you recently had any incident of condom burst?",
+                "type": "obs",
+                "id": "condomBurst",
+                "questionOptions": {
+                  "concept": "12377AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive !== '1' || age < 9"
+                }
+              },
+              {
+                "label": "Have you engaged in unprotected sex with someone you don’t know their HIV status in the last 12 months?",
+                "type": "obs",
+                "id": "strangerSex",
+                "questionOptions": {
+                  "concept": "12378AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive !== '1' || age < 9 "
+                }
+              },
+              {
+                "label": "Have you had unprotected sex with someone who has known HIV positive status?",
+                "type": "obs",
+                "id": "knownPositive",
+                "questionOptions": {
+                  "concept": "9793AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive !== '1' || age < 9 "
+                }
+              },
+              {
+                "label": "Have you ever shared a needle while injecting drugs with someone else?",
+                "type": "obs",
+                "id": "needleShared",
+                "questionOptions": {
+                  "concept": "059e8896-eea1-4295-b71d-5223bd29863d",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(sexuallyActive) || sexuallyActive == '0' || age < 9 "
+                }
+              },
+              {
+                "label": "Has the client had needle stick injuries?",
+                "type": "obs",
+                "id": "needleStick",
+                "questionOptions": {
+                  "concept": "3740fc55-4ae2-4f34-ac9d-0dde5988ebf8",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(hcwCare) || hcwCare !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Traditional /non-medical procedures e.g. scarification, plastic tooth extraction, Circumcision, uvulectomy etc",
+                "type": "obs",
+                "id": "__tDI8Dp4Ly",
+                "required": "true",
+                "questionOptions": {
+                  "concept": "503736d1-b29f-414b-ba5a-7aabfa5619f8",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "For children if any of the below are present , explore with the guardian and determine HTS eligibility",
+                "type": "obs",
+                "id": "EligiBiliTykiDs",
+                "questionOptions": {
+                  "concept": "82f9db06-0bf0-44c3-81e1-19b5216ef946",
+                  "rendering": "checkbox",
+                  "answers": [
+                    {
+                      "concept": "68AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Malnutrition"
+                    },
+                    {
+                      "concept": "5050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Failure to thrive (age and child's growth rate has discrepancy)"
+                    },
+                    {
+                      "concept": "10246AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Recurrent infections"
+                    },
+                    {
+                      "concept": "58AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "TB"
+                    },
+                    {
+                      "concept": "1174AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No parent (are orphaned)"
+                    },
+                    {
+                      "concept": "12379AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Parents /siblings who recently tested HIV positive."
+                    },
+                    {
+                      "concept": "5945AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Prolonged fever of unknown origin"
+                    },
+                    {
+                      "concept": "5632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Children >18 months who are still breastfeeding or wet nursing"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "age > 9 || testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              }
+            ]
+          },
+          {
+            "label": "GBV",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Has the client recently experienced GBV?",
+                "type": "obs",
+                "id": "experiencedGbv",
+                "required": "true",
+                "questionOptions": {
+                  "concept": "12384AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "age < 9 || testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Within the last 3 months, has the client experienced either physical or sexual violence?",
+                "type": "obs",
+                "id": "sexualViolence",
+                "questionOptions": {
+                  "concept": "12385AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(experiencedGbv) || experiencedGbv !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || age < 9 "
+                }
+              },
+              {
+                "label": "Have you recently been forced to participate into sexual activity against your wish?",
+                "type": "obs",
+                "id": "forcedSex",
+                "questionOptions": {
+                  "concept": "11082AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(experiencedGbv) || experiencedGbv !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || age < 9 "
+                }
+              }
+            ]
+          },
+          {
+            "label": "Preventive Care Assessment",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "PrEP Service",
+                "type": "obs",
+                "id": "prepService",
+                "questionOptions": {
+                  "concept": "70d8f5b1-8a10-453a-a1e2-1de96a87f31f",
+                  "rendering": "checkbox",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "PrEP"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "age < 9 || testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Is the client currently on PrEP?",
+                "type": "obs",
+                "id": "currentlyPrep",
+                "questionOptions": {
+                  "concept": "3bb25a51-6d87-4e91-81a9-90075f5d22f6",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(prepService) || !arrayContains(prepService, ['1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA']) || age < 9"
+                }
+              },
+              {
+                "label": "PEP",
+                "type": "obs",
+                "id": "pepService",
+                "questionOptions": {
+                  "concept": "12386AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "checkbox",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "PEP"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Has the client used PEP in the last 3 months?",
+                "type": "obs",
+                "id": "currentlyPep",
+                "questionOptions": {
+                  "concept": "2090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "0",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "162570AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(pepService) || !arrayContains(pepService, ['1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'])"
+                }
+              },
+              {
+                "label": "STI Service",
+                "type": "obs",
+                "id": "stiService",
+                "questionOptions": {
+                  "concept": "b76021d2-38c7-42ff-b2eb-0bd558396ef7",
+                  "rendering": "checkbox",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "STI"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "age < 9 || testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Has the client had an STI in the last 3 months?",
+                "type": "obs",
+                "id": "currentlySti",
+                "questionOptions": {
+                  "concept": "2190071e-744c-4ecf-aa00-d331280afc37",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    },
+                    {
+                      "concept": "10768AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Declined to answer"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(stiService) || !arrayContains(stiService, ['1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA']) || age < 9"
+                }
+              }
+            ]
+          },
+          {
+            "label": "TB Risk Assessment",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Has the client been screened for TB?",
+                "type": "obs",
+                "id": "screenedTB",
+                "required": "true",
+                "questionOptions": {
+                  "concept": "a8a48bec-1350-11df-a1f1-0026b9348838",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Cough of any duration",
+                "type": "obs",
+                "id": "coughDuration",
+                "questionOptions": {
+                  "concept": "107AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(screenedTB) || screenedTB !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                }
+              },
+              {
+                "label": "Client has a fever?",
+                "type": "obs",
+                "id": "fever",
+                "questionOptions": {
+                  "concept": "5945AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(screenedTB) || screenedTB !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                }
+              },
+              {
+                "label": "Noticable weight loss or poor weight gain",
+                "type": "obs",
+                "id": "weightLoss",
+                "questionOptions": {
+                  "concept": "11310AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(screenedTB) || screenedTB !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                }
+              },
+              {
+                "label": "Client Experiencing night sweats?",
+                "type": "obs",
+                "id": "experiencingSweats",
+                "questionOptions": {
+                  "concept": "8061AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "validators": [],
+                "hide": {
+                  "hideWhenExpression": "isEmpty(screenedTB) || screenedTB !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                }
+              },
+              {
+                "label": "Resulting TB Status:",
+                "type": "obs",
+                "id": "tbResultstaTuS",
+                "questionOptions": {
+                  "concept": "8292AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "calculate": {
+                    "calculateExpression": "String(coughDuration) === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && String(fever) === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && String(weightLoss) === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'  && String(experiencingSweats) === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '1660AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' : ( (String(coughDuration) === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'? 1 : 0) + (String(fever) === '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'? 1 : 0) + (String(experiencingSweats) === '1'? 1 : 0) + (String(weightLoss) === '1'? 1 : 0) ) > 0 ?  '142177AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' : ''"
+                  },
+                  "answers": [
+                    {
+                      "concept": "10678AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No TB Signs"
+                    },
+                    {
+                      "concept": "12388AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Presumed TB"
+                    },
+                    {
+                      "concept": "10767AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "TB Confirmed"
+                    },
+                    {
+                      "concept": "6621AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "TB Screening Not Done"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "isEmpty(screenedTB) || screenedTB !== '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                }
+              }
+            ]
+          },
+          {
+            "label": "Pregnancy Assessment",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Client currently pregnant?",
+                "type": "obs",
+                "id": "preGnant",
+                "required": "true",
+                "questionOptions": {
+                  "concept": "8351AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "sex !== 'F' || age < 10 || testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Breastfeeding mother",
+                "type": "obs",
+                "id": "breastfeeding",
+                "questionOptions": {
+                  "concept": "2056AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "sex !== 'F' || age < 10 || testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              }
+            ]
+          },
+          {
+            "label": "Eligibility & Referral for Testing",
+            "isExpanded": "true",
+            "questions": [
+              {
+                "label": "Client eligible for testing :",
+                "type": "obs",
+                "id": "eligibleTest",
+                "questionOptions": {
+                  "concept": "11875AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "calculate": {
+                    "calculateExpression": "String(testedResultsprovider) === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' : ''"
+                  },
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Get HIV Risk Score :",
+                "type": "control",
+                "id": "riskScore",
+                "questionOptions": {
+                  "concept": "1915AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "text",
+                  "machineLearning": true
+                },
+                "hide": {
+                  "hideWhenExpression": "testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Generated HIV Risk Category",
+                "type": "obs",
+                "questionOptions": {
+                  "rendering": "radio",
+                  "concept": "03019f05-7e81-4bbe-a24c-bf6e8188e566",
+                  "answers": [
+                    {
+                      "concept": "9777AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Low"
+                    },
+                    {
+                      "concept": "1744AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Medium"
+                    },
+                    {
+                      "concept": "12390AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "High"
+                    },
+                    {
+                      "concept": "9078AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Highest"
+                    }
+                  ]
+                },
+                "id": "genRisK",
+                "hide": {
+                  "hideWhenExpression": "testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Did you recommend HIV testing?",
+                "type": "obs",
+                "id": "reCommeNHiVtest",
+                "required": "true",
+                "questionOptions": {
+                  "concept": "7964AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "testedResultsprovider === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "Why did you recommend testing?",
+                "type": "obs",
+                "id": "ReasonOnE",
+                "required": "true",
+                "questionOptions": {
+                  "concept": "10769AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "795cff32-9697-4c10-a1c2-deed8143677d",
+                      "label": "Client is eligible"
+                    },
+                    {
+                      "concept": "03019f05-7e81-4bbe-a24c-bf6e8188e566",
+                      "label": "Based on HIV Risk category from EMR"
+                    },
+                    {
+                      "concept": "1163AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Both eligible and risk category"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "isEmpty(reCommeNHiVtest) || reCommeNHiVtest != '1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                }
+              },
+              
+              {
+                "label": "Client referred for testing :",
+                "type": "obs",
+                "id": "clientReferred",
+                "required": "true",
+                "questionOptions": {
+                  "concept": "11875AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                  "rendering": "radio",
+                  "answers": [
+                    {
+                      "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "Yes"
+                    },
+                    {
+                      "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "label": "No"
+                    }
+                  ]
+                },
+                "hide": {
+                  "hideWhenExpression": "eligibleTest === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                }
+              },
+              {
+                "label": "If No, Choose a reason below",
+                "type": "obsGroup",
+                "questionOptions": {
+                  "concept": "1ae0efeb-eda1-418e-a9ce-3296eb4d7d21",
+                  "rendering": "group"
+                },
+                "questions": [
+                  {
+                    "label": "If No, Choose a reason below",
+                    "type": "obs",
+                    "id": "declineTesting",
+                    "questionOptions": {
+                      "concept": "a8afc732-1350-11df-a1f1-0026b9348838",
+                      "rendering": "checkbox",
+                      "answers": [
+                        {
+                          "concept": "1504AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                          "label": "Declined testing"
+                        },
+                        {
+                          "concept": "9fc7e928-6305-4e03-989e-db423a2c8212",
+                          "label": "Wants to test with partner"
+                        },
+                        {
+                          "concept": "1666AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                          "label": "Stigma related issues"
+                        },
+                        {
+                          "concept": "11565AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                          "label": "Fear of violent partner"
+                        },
+                        {
+                          "concept": "12391AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                          "label": "No counselor to test"
+                        },
+                        {
+                          "concept": "12392AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                          "label": "High workload for the staff"
+                        },
+                        {
+                          "concept": "9337AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                          "label": "Too sick"
+                        },
+                        {
+                          "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                          "label": "Other"
+                        }
+                      ]
+                    },
+                    "hide": {
+                      "hideWhenExpression": "clientReferred !== '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
+                  },
+                  {
+                    "label": "Specify :",
+                    "type": "obs",
+                    "id": "reasonSpecify",
+                    "questionOptions": {
+                      "concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                      "rendering": "text"
+                    },
+                    "hide": {
+                      "hideWhenExpression": "declineTesting != '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    }
+                  }
+                ],
+                "id": "ReferTestIng"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processor": "EncounterFormProcessor",
+    "referencedForms": [],
+    "encounterType": "9c0a7a57-62ff-4f75-babe-5835b0e921b7"
+  }
