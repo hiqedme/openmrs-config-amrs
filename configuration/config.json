@@ -32,10 +32,15 @@
     "showUpcomingAppointments": true,
     "extensionSlots": {
       "patient-highlights-bar-slot": {
-        "remove": ["patient-flag-tags", "biometrics-overview-widget"]
+        "remove": [
+          "patient-flag-tags",
+          "biometrics-overview-widget"
+        ]
       },
       "patient-chart-summary-dashboard-slot": {
-        "add": ["programs-overview-widget"],
+        "add": [
+          "programs-overview-widget"
+        ],
         "remove": [
           "patient-clinical-view-overview",
           "immunization-overview-widget",
@@ -43,7 +48,10 @@
         ]
       },
       "patient-chart-dashboard-slot": {
-        "remove": ["clinical-view-summary-dashboard", "offline-tools-patient-chart-actions-dashboard-link"]
+        "remove": [
+          "clinical-view-summary-dashboard",
+          "offline-tools-patient-chart-actions-dashboard-link"
+        ]
       }
     },
     "logo": {
@@ -65,12 +73,16 @@
   "@openmrs/esm-home-app": {
     "extensionSlots": {
       "homepage-widgets-slot": {
-        "remove": ["home-appointments"]
+        "remove": [
+          "home-appointments"
+        ]
       }
     }
   },
   "@ampath/esm-patient-registration-app": {
-    "defaultPatientIdentifierTypes": ["58a4732e-1359-11df-a1f1-0026b9348838"],
+    "defaultPatientIdentifierTypes": [
+      "58a4732e-1359-11df-a1f1-0026b9348838"
+    ],
     "address": {
       "useAddressHierarchy": {
         "enabled": true,
@@ -100,8 +112,23 @@
         }
       }
     },
-    "sections": ["demographics", "contact", "demographics-custom", "relationships", "nextOfKin", "careGiver"],
+    "sections": [
+      "demographics",
+      "demographics-custom",
+      "identifiers",
+      "contact",
+      "relationships",
+      "nextOfKin",
+      "careGiver"
+    ],
     "sectionDefinitions": [
+      {
+        "id": "identifiers",
+        "name": "Identifiers",
+        "fields": [
+          "identifiers"
+        ]
+      },
       {
         "id": "contact",
         "name": "Contact Details",
@@ -122,17 +149,31 @@
       {
         "id": "demographics-custom",
         "name": "Demographics",
-        "fields": ["maritalStatus", "occupation", "religion", "highestLevelOfEducation"]
+        "fields": [
+          "maritalStatus",
+          "occupation",
+          "religion",
+          "highestLevelOfEducation"
+        ]
       },
       {
         "id": "nextOfKin",
         "name": "Next of Kin",
-        "fields": ["nextOfKinName", "nextOfKinRelationship", "nextOfKinPhoneNumber", "nextOfKinResidence"]
+        "fields": [
+          "nextOfKinName",
+          "nextOfKinRelationship",
+          "nextOfKinPhoneNumber",
+          "nextOfKinResidence"
+        ]
       },
       {
         "id": "careGiver",
         "name": "Care giver",
-        "fields": ["careGiverName", "careGiverRelationship", "careGiverPhoneNumber"]
+        "fields": [
+          "careGiverName",
+          "careGiverRelationship",
+          "careGiverPhoneNumber"
+        ]
       }
     ],
     "fieldDefinitions": [
@@ -143,11 +184,14 @@
         "label": "Name"
       },
       {
+        "id": "id",
+        "type": "person attribute"
+      },
+      {
         "id": "careGiverRelationship",
         "type": "person attribute",
         "uuid": "06b0da36-e133-4be6-aec0-31e7ed0e1ac2",
         "label": "Relationship",
-
         "customConceptAnswers": [
           {
             "uuid": "7878e432-1359-11df-a1f1-0026b9348838",
@@ -480,10 +524,14 @@
     },
     "extensionSlots": {
       "patient-chart-summary-dashboard-slot": {
-        "remove": ["biometrics-overview-widget"]
+        "remove": [
+          "biometrics-overview-widget"
+        ]
       },
       "patient-chart-vitals-biometrics-dashboard-slot": {
-        "remove": ["biometrics-details-widget"]
+        "remove": [
+          "biometrics-details-widget"
+        ]
       }
     },
     "Translation overrides": {
@@ -532,7 +580,9 @@
       }
     ],
     "orders": {
-      "labOrderableConcepts": ["a8a00e1e-1350-11df-a1f1-0026b9348838"]
+      "labOrderableConcepts": [
+        "a8a00e1e-1350-11df-a1f1-0026b9348838"
+      ]
     },
     "labTestsWithOrderReasons": [
       {
