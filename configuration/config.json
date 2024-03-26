@@ -184,10 +184,6 @@
         "label": "Name"
       },
       {
-        "id": "id",
-        "type": "person attribute"
-      },
-      {
         "id": "careGiverRelationship",
         "type": "person attribute",
         "uuid": "06b0da36-e133-4be6-aec0-31e7ed0e1ac2",
