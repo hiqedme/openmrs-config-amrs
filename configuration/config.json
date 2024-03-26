@@ -126,7 +126,7 @@
         "id": "identifiers",
         "name": "Identifiers",
         "fields": [
-          "identifiers"
+          "id"
         ]
       },
       {
